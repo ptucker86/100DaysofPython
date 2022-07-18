@@ -34,11 +34,13 @@ user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper, or 2 
 computer_choice = random.randint(0,2)
 print("3...2...1...shoot")
 
-if user_choice < 3 or user_choice >=0:
+if user_choice < 3 and user_choice >=0:
+    print("Your choice:")
     print(game_images[user_choice])
 else:
     print("You're going to lose with that choice.")
 
+print("Computer choice:")
 print(game_images[computer_choice])
 
 original_code = '''
